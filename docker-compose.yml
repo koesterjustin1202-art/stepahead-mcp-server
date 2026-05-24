@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  mcp-server:
+    build: .
+    container_name: stepahead-mcp-server
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      QDRANT_URL: http://host.docker.internal:6333
+      OLLAMA_BASE_URL: http://host.docker.internal:11434
+      SEARXNG_URL: http://host.docker.internal:8080
+      NEXTCLOUD_URL: http://host.docker.internal:8001
+      NEXTCLOUD_USERNAME: admin
+      NEXTCLOUD_PASSWORD: admin
+      MCP_SERVER_API_KEY: mcp_dev_key_2026
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+networks:
+  default:
+    name: stepahead-network
