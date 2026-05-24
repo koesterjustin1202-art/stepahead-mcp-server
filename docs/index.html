@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StepAhead MCP Server — AI Tools API</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0f; color: #e5e5e5; line-height: 1.6; }
+.container { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
+header { text-align: center; margin-bottom: 60px; }
+h1 { font-size: 3rem; font-weight: 700; background: linear-gradient(135deg, #6366f1, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 16px; }
+.subtitle { font-size: 1.25rem; color: #999; max-width: 600px; margin: 0 auto; }
+.hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 16px; padding: 48px; margin-bottom: 48px; text-align: center; }
+.price { font-size: 4rem; font-weight: 700; color: #6366f1; }
+.price span { font-size: 1.5rem; color: #888; font-weight: 400; }
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; margin-bottom: 48px; }
+.feature { background: #111118; border: 1px solid #222230; border-radius: 12px; padding: 24px; }
+.feature h3 { color: #a855f7; margin-bottom: 8px; font-size: 1.1rem; }
+.feature p { color: #888; font-size: 0.95rem; }
+.tools { background: #111118; border: 1px solid #222230; border-radius: 12px; padding: 32px; margin-bottom: 48px; }
+.tools h2 { color: #fff; margin-bottom: 20px; font-size: 1.5rem; }
+.tool-grid { display: flex; flex-wrap: wrap; gap: 12px; }
+.tool-tag { background: #1a1a2e; border: 1px solid #3a3a5a; border-radius: 20px; padding: 6px 14px; font-size: 0.85rem; color: #b4b4cc; }
+.cta { text-align: center; background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); border-radius: 12px; padding: 32px; }
+.btn { background: #fff; color: #6366f1; padding: 14px 32px; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; font-size: 1.1rem; }
+.btn:hover { transform: scale(1.05); }
+footer { text-align: center; margin-top: 48px; color: #555; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>StepAhead MCP Server</h1>
+<p class="subtitle">Production-ready AI tools API. Qdrant, SearXNG, Nextcloud, Ollama — unified in one server.</p>
+</header>
+
+<div class="hero">
+<p style="color:#999;margin-bottom:16px">Starting at</p>
+<p class="price">$29<span>/month</span></p>
+<p style="margin-top:16px;color:#888">5 Tools • 10K Requests • Self-Hosted Option</p>
+</div>
+
+<div class="features">
+<div class="feature"><h3>🔍 Qdrant Vector Search</h3><p>Semantic search across your knowledge base. Embeddings via Ollama, 768-dim vectors.</p></div>
+<div class="feature"><h3>🌐 SearXNG Search</h3><p>Privacy-first web search API. No tracking, no paywalls, unlimited queries.</p></div>
+<div class="feature"><h3>☁️ Nextcloud Integration</h3><p>File listing, sharing, and sync. Full Nextcloud Files API access.</p></div>
+<div class="feature"><h3>🤖 Ollama Chat & Embed</h3><p>Local LLMs with nomic-embed-text. qwen2.5, gemma4, llama3.2 ready.</p></div>
+<div class="feature"><h3>🔒 API Key Auth</h3><p>x402 payment protocol ready. Rate limiting, usage tracking built-in.</p></div>
+<div class="feature"><h3>🐳 Docker Ready</h3><p>One Dockerfile. Deploy to Railway, Fly.io, or any cloud.</p></div>
+</div>
+
+<div class="tools">
+<h2>Included Tools</h2>
+<div class="tool-grid">
+<span class="tool-tag">qdrant_search_by_text</span>
+<span class="tool-tag">qdrant_points_search</span>
+<span class="tool-tag">searxng_search</span>
+<span class="tool-tag">searxng_search_images</span>
+<span class="tool-tag">nextcloud_files_list</span>
+<span class="tool-tag">nextcloud_files_share</span>
+<span class="tool-tag">ollama_chat</span>
+<span class="tool-tag">ollama_embed</span>
+<span class="tool-tag">paperless_documents_list</span>
+<span class="tool-tag">docker_ps</span>
+</div>
+</div>
+
+<div class="cta">
+<a href="https://github.com/koesterjustin1202-art/stepahead-mcp-server" class="btn">View on GitHub →</a>
+<p style="margin-top:16px;color:rgba(255,255,255,0.7);font-size:0.9rem">Free tier available • No credit card required</p>
+</div>
+
+<footer>
+<p>StepAhead Digital • open source under MIT license</p>
+</footer>
+</div>
+</body>
+</html>
