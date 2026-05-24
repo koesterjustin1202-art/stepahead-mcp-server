@@ -1,0 +1,39 @@
+{
+  "name": "stepahead-mcp-server",
+  "version": "1.0.0",
+  "description": "Production-grade automation infrastructure: Docker, RabbitMQ, Qdrant, Nextcloud, SearXNG, Ollama — as an MCP subscription service.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "qdrant",
+    "searxng",
+    "nextcloud",
+    "ollama",
+    "docker",
+    "rabbitmq",
+    "automation",
+    "ai-tools"
+  ],
+  "author": "StepAhead Digital",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "@nevermined-io/sdk": "^2.2.0",
+    "axios": "^1.6.7"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stepahead/stepahead-mcp-server"
+  }
+}
